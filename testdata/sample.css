@@ -1,0 +1,19 @@
+body {
+	margin: 0px;
+	font-family: MSゴシック;
+}
+h1 {
+	font-size: 11px !important;
+}
+
+div {
+	font-size: 10px;
+}
+
+div.hoge { 
+           font-size: 20px;
+ }
+
+a:hover {
+	color: #0000FF;
+}
