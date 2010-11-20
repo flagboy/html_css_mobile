@@ -1,0 +1,20 @@
+HtmlCssInclude convert css to inline style for mobile
+
+Requirements
+------------
+* Python 2.4 or later (not support 3.x)
+
+Features
+--------
+* nothing
+
+setuptools-----
+::
+
+   $ easy_install HtmlCssInclude
+
+History
+-------
+0.1 (2010-11-20)
+~~~~~~~~~~~~~~~~~~
+* first release
