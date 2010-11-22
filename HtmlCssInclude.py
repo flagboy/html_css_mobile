@@ -222,18 +222,10 @@ class CssInclude(object):
 
 
 if __name__ == '__main__':
-    import time
-
     sample_html = open('testdata/sample.html').read()
-    st_time = time.time()
-    for i in range(100):
-        c = CssInclude(agent='docomo', is_vga=True)
-        r = c.apply(sample_html)
+    css_include = CssInclude(agent='docomo', is_vga=True)
+    output_html = css_include.apply(sample_html)
 
-    fin_time = time.time()
-
-    print r
-
-    print fin_time - st_time
+    print output_html
 
 

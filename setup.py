@@ -15,6 +15,8 @@ classifiers = [
 setup(
    name=name,
    version=version,
+   py_modules=["HtmlCssInclude"],
+   data_files=[('testdata', ['sample.css', 'sample.html'])],
    description=short_description,
    long_description=long_description,
    classifiers=classifiers,

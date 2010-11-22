@@ -1,17 +1,33 @@
-HtmlCssInclude convert css to inline style for mobile
+HtmlCssInclude converts css into inline style html for mobile.
+
+font size is changed by mobile carrier (docomo, au, softbank).
+when mobile is VGA, image size is changed.
 
 Requirements
 ------------
-* Python 2.4 or later (not support 3.x)
+* Python 2.5 or later (not support 3.x)
+* lxml
 
-Features
---------
-* nothing
-
-setuptools-----
+Setup
+-----
 ::
 
    $ easy_install HtmlCssInclude
+
+
+How to Use
+--------
+::
+
+   >>> from  HtmlCssInclude import CssInclude
+
+initialize with mobile carrier::
+
+   >>> css_include = CssInclude(agent='docomo', is_vga=True)
+
+convert css into inline style html::
+
+   >>> converted_html = css_include.apply(input_html)   
 
 History
 -------
